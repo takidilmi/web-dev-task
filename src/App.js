@@ -1,18 +1,18 @@
 function App() {
-  const imageSrc = 'https://via.placeholder.com/150';
+  const imageSrc = '/defaultAvatar.png';
   const leaderTeam = [
     '[Founder Name]',
     '[Founder Name]',
     '[VP Name]',
     '[VP Name]',
-    '[VP Name]',    
+    '[VP Name]',
   ];
   const leaderRole = [
     'Founder/ CEO',
     'Founder/ CEO',
     'VP, Development & Growth',
     'VP, Sales & Marketing',
-    'VP, Finance & Operation',    
+    'VP, Finance & Operation',
   ];
   const developerName = [
     '[Developer Name]',
@@ -52,14 +52,26 @@ function App() {
   ];
   return (
     <>
-      <div className="flex flex-col items-center gap-2 text-balance">
+      <div className="flex flex-col items-center gap-10 text-balance">
         <div className="relative w-full">
           <div>
             <br></br>
-            <i className="absolute top-0 right-0 bg-red-600 py-5 px-7 clip-path-right"></i>
+            <i className="absolute top-0 right-0 bg-purple-400 py-5 px-7 clip-path-right"></i>
           </div>
         </div>
         <div className="relative flex flex-col w-full">
+          <h1 className="self-center p-1 text-[28px] rounded-[4px] bg-purple-400">
+            Company Name
+          </h1>
+          <p className="self-center w-[80%] text-center mt-4">
+            Welcome to [Your Company Name], where a dedicated team of
+            professionals work together to bring innovation, creativity, and
+            expertise to software industry, get to know the individuals who make
+            our company thrive.
+          </p>
+          <hr className="w-[40%] self-center border-t-[2px] my-10 border-dashed border-purple-400" />
+          <h3>Meet Our Team</h3>
+          <h2 className="self-center bg-purple-400 p-1 rounded-[4px] my-10"> Leadership / Management Team</h2>
           <div className="self-center">
             <div>
               <div className="flex justify-center gap-4 flex-wrap mb-4">
@@ -72,8 +84,8 @@ function App() {
                       src={imageSrc}
                       alt="Placeholder"
                     />
-                    <p>{leaderTeam[i]}</p>
-                    <p>{leaderRole[i]}</p>
+                    <p className="teamName">{leaderTeam[i]}</p>
+                    <p className="teamRole">{leaderRole[i]}</p>
                   </div>
                 ))}
               </div>
@@ -87,8 +99,8 @@ function App() {
                       src={imageSrc}
                       alt="Placeholder"
                     />
-                    <p>{leaderTeam[i + 2]}</p>
-                    <p className="w-[90%]">{leaderRole[i + 2]}</p>
+                    <p className="teamName">{leaderTeam[i + 2]}</p>
+                    <p className="w-[90%] teamRole">{leaderRole[i + 2]}</p>
                   </div>
                 ))}
               </div>
@@ -96,9 +108,9 @@ function App() {
           </div>
         </div>
         <div className="relative w-full flex flex-col gap-2">
-          <div className="self-center bg-red-600 p-1 rounded-[4px]">
+          <div className="self-center bg-purple-400 p-1 rounded-[4px]">
             <h2>Development Team</h2>
-            <i className="absolute top-[-8px] left-0 bg-red-600 py-5 px-7 clip-path-left"></i>
+            <i className="absolute top-[-8px] left-0 bg-purple-400 py-5 px-7 clip-path-left"></i>
           </div>
           <div className="self-center">
             <div>
@@ -112,8 +124,8 @@ function App() {
                       src={imageSrc}
                       alt="Placeholder"
                     />
-                    <p>{developerName[i]}</p>
-                    <p>{developerRole[i]}</p>
+                    <p className="teamName">{developerName[i]}</p>
+                    <p className="teamRole">{developerRole[i]}</p>
                   </div>
                 ))}
               </div>
@@ -127,8 +139,8 @@ function App() {
                       src={imageSrc}
                       alt="Placeholder"
                     />
-                    <p>{developerName[i + 4]}</p>
-                    <p>{developerRole[i + 4]}</p>
+                    <p className="teamName">{developerName[i + 4]}</p>
+                    <p className="teamRole">{developerRole[i + 4]}</p>
                   </div>
                 ))}
               </div>
@@ -136,9 +148,9 @@ function App() {
           </div>
         </div>
         <div className="relative w-full flex flex-col gap-2">
-          <div className="self-center bg-red-600 p-1 rounded-[4px]">
+          <div className="self-center bg-purple-400 p-1 rounded-[4px]">
             <h2>Sales and Marketing Team</h2>
-            <i className="absolute top-[-8px] right-0 bg-red-600 py-5 px-7 clip-path-right"></i>
+            <i className="absolute top-[-8px] right-0 bg-purple-400 py-5 px-7 clip-path-right"></i>
           </div>
           <div className="self-center">
             <div>
@@ -152,8 +164,8 @@ function App() {
                       src={imageSrc}
                       alt="Placeholder"
                     />
-                    <p>{memberName[i]}</p>
-                    <p>{memberRole[i]}</p>
+                    <p className="teamName">{memberName[i]}</p>
+                    <p className="teamRole">{memberRole[i]}</p>
                   </div>
                 ))}
               </div>
@@ -167,8 +179,8 @@ function App() {
                       src={imageSrc}
                       alt="Placeholder"
                     />
-                    <p>{memberName[i + 4]}</p>
-                    <p>{memberRole[i + 4]}</p>
+                    <p className="teamName">{memberName[i + 4]}</p>
+                    <p className="teamRole">{memberRole[i + 4]}</p>
                   </div>
                 ))}
               </div>
@@ -178,7 +190,7 @@ function App() {
         <div className="relative w-full">
           <div>
             <br></br>
-            <i className="absolute bottom-0 left-0 bg-red-600 py-5 px-7 clip-path-left"></i>
+            <i className="absolute bottom-0 left-0 bg-purple-400 py-5 px-7 clip-path-left"></i>
           </div>
         </div>
       </div>

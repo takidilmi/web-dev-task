@@ -3,6 +3,7 @@
 @tailwind utilities;
 body {
   margin: 0;
+  border: solid 2px black;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,8 +15,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-img{
+img {
   border-radius: 100%;
   height: 100px;
   width: 100px;
+  margin-bottom: 10px;
+}
+h3{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+}
+h2, h1 {
+  color: white;
+}
+.teamRole{
+  color: #C20ACF;
+  font-size: 15px;
+}
+.teamName{
+  font-weight: bold;
+  font-size: 18px;
 }
