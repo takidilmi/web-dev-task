@@ -1,5 +1,55 @@
 function App() {
   const imageSrc = 'https://via.placeholder.com/150';
+  const leaderTeam = [
+    '[Founder Name]',
+    '[Founder Name]',
+    '[VP Name]',
+    '[VP Name]',
+    '[VP Name]',    
+  ];
+  const leaderRole = [
+    'Founder/ CEO',
+    'Founder/ CEO',
+    'VP, Development & Growth',
+    'VP, Sales & Marketing',
+    'VP, Finance & Operation',    
+  ];
+  const developerName = [
+    '[Developer Name]',
+    '[Developer Name]',
+    '[Developer Name]',
+    '[Developer Name]',
+    '[Developer Name]',
+    '[Developer Name]',
+    '[Developer Name]',
+  ];
+  const developerRole = [
+    'Team Lead, SE',
+    'Software Engineer',
+    'Software Engineer',
+    'Software Engineer',
+    'Software Engineer',
+    'Software Engineer',
+    'Software Engineer',
+  ];
+  const memberName = [
+    '[Employee Name]',
+    '[Employee Name]',
+    '[Employee Name]',
+    '[Employee Name]',
+    '[Employee Name]',
+    '[Employee Name]',
+    '[Employee Name]',
+  ];
+  const memberRole = [
+    'Team Lead',
+    'Sales Officer',
+    'Sales Officer',
+    'Sales Officer',
+    'Marketing Officer',
+    'Marketing Officer',
+    'Marketing Officer',
+  ];
   return (
     <>
       <div className="flex flex-col items-center gap-2 text-balance">
@@ -14,22 +64,32 @@ function App() {
             <div>
               <div className="flex justify-center gap-4 flex-wrap mb-4">
                 {Array.from({ length: 2 }).map((_, i) => (
-                  <img
+                  <div
                     key={i}
-                    className="mx-2"
-                    src={imageSrc}
-                    alt="Placeholder"
-                  />
+                    className="mx-2 flex flex-col justify-center items-center text-center"
+                  >
+                    <img
+                      src={imageSrc}
+                      alt="Placeholder"
+                    />
+                    <p>{leaderTeam[i]}</p>
+                    <p>{leaderRole[i]}</p>
+                  </div>
                 ))}
               </div>
               <div className="flex justify-center gap-4 flex-wrap">
                 {Array.from({ length: 3 }).map((_, i) => (
-                  <img
+                  <div
                     key={i}
-                    className="mx-2"
-                    src={imageSrc}
-                    alt="Placeholder"
-                  />
+                    className="mx-2 flex flex-col justify-center items-center text-center"
+                  >
+                    <img
+                      src={imageSrc}
+                      alt="Placeholder"
+                    />
+                    <p>{leaderTeam[i + 2]}</p>
+                    <p className="w-[90%]">{leaderRole[i + 2]}</p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -44,22 +104,32 @@ function App() {
             <div>
               <div className="flex justify-center gap-4 flex-wrap mb-4">
                 {Array.from({ length: 4 }).map((_, i) => (
-                  <img
+                  <div
                     key={i}
-                    className="mx-2"
-                    src={imageSrc}
-                    alt="Placeholder"
-                  />
+                    className="mx-2 flex flex-col justify-center items-center text-center"
+                  >
+                    <img
+                      src={imageSrc}
+                      alt="Placeholder"
+                    />
+                    <p>{developerName[i]}</p>
+                    <p>{developerRole[i]}</p>
+                  </div>
                 ))}
               </div>
               <div className="flex justify-center gap-4 flex-wrap">
                 {Array.from({ length: 3 }).map((_, i) => (
-                  <img
+                  <div
                     key={i}
-                    className="mx-2"
-                    src={imageSrc}
-                    alt="Placeholder"
-                  />
+                    className="mx-2 flex flex-col justify-center items-center text-center"
+                  >
+                    <img
+                      src={imageSrc}
+                      alt="Placeholder"
+                    />
+                    <p>{developerName[i + 4]}</p>
+                    <p>{developerRole[i + 4]}</p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -74,22 +144,32 @@ function App() {
             <div>
               <div className="flex justify-center gap-4 flex-wrap mb-4">
                 {Array.from({ length: 4 }).map((_, i) => (
-                  <img
+                  <div
                     key={i}
-                    className="mx-2"
-                    src={imageSrc}
-                    alt="Placeholder"
-                  />
+                    className="mx-2 flex flex-col justify-center items-center text-center"
+                  >
+                    <img
+                      src={imageSrc}
+                      alt="Placeholder"
+                    />
+                    <p>{memberName[i]}</p>
+                    <p>{memberRole[i]}</p>
+                  </div>
                 ))}
               </div>
               <div className="flex justify-center gap-4 flex-wrap">
                 {Array.from({ length: 3 }).map((_, i) => (
-                  <img
+                  <div
                     key={i}
-                    className="mx-2"
-                    src={imageSrc}
-                    alt="Placeholder"
-                  />
+                    className="mx-2 flex flex-col justify-center items-center text-center"
+                  >
+                    <img
+                      src={imageSrc}
+                      alt="Placeholder"
+                    />
+                    <p>{memberName[i + 4]}</p>
+                    <p>{memberRole[i + 4]}</p>
+                  </div>
                 ))}
               </div>
             </div>
